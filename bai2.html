@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let inputNumber = prompt("Nhập số muốn kiểm tra");
+  let arrayNumber = [1,4,7,3,8,6,9,4,6,2,9,5,7,22,31];
+  let index = 0;
+  inputNumber = parseInt(inputNumber);
+  for (let i = 0; i < arrayNumber.length; i++){
+      if (arrayNumber[i] == inputNumber){
+          index++;
+      }
+  }
+  document.write("Có "+ index +" số "+ inputNumber +" trong mảng");
+</script>
+</body>
+</html>
